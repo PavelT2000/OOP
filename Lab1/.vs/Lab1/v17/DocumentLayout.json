@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Univer\\OOP\\Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|c:\\univer\\oop\\lab1\\lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|solutionrelative:lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|c:\\univer\\oop\\lab1\\lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|solutionrelative:lab1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|c:\\univer\\oop\\lab1\\lab1\\transportinputcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|solutionrelative:lab1\\transportinputcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|c:\\univer\\oop\\lab1\\lab1\\combatinputcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|solutionrelative:lab1\\combatinputcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|c:\\univer\\oop\\lab1\\lab1\\spacevessel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|solutionrelative:lab1\\spacevessel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|c:\\univer\\oop\\lab1\\lab1\\transportinputcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|solutionrelative:lab1\\transportinputcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|c:\\univer\\oop\\lab1\\lab1\\combatinputcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|solutionrelative:lab1\\combatinputcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|c:\\univer\\oop\\lab1\\lab1\\combatinputcontrol.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{7A6E36B5-6416-4B99-9D11-AB281D2004DE}|Lab1\\Lab1.csproj|solutionrelative:lab1\\combatinputcontrol.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Univer\\OOP\\Lab1\\Lab1\\Form1.cs",
+              "RelativeDocumentMoniker": "Lab1\\Form1.cs",
+              "ToolTip": "C:\\Univer\\OOP\\Lab1\\Lab1\\Form1.cs",
+              "RelativeToolTip": "Lab1\\Form1.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T06:20:08.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransportInputControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Univer\\OOP\\Lab1\\Lab1\\TransportInputControl.cs",
+              "RelativeDocumentMoniker": "Lab1\\TransportInputControl.cs",
+              "ToolTip": "C:\\Univer\\OOP\\Lab1\\Lab1\\TransportInputControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Lab1\\TransportInputControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T06:17:21.951Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SpaceVessel.cs",
+              "DocumentMoniker": "C:\\Univer\\OOP\\Lab1\\Lab1\\SpaceVessel.cs",
+              "RelativeDocumentMoniker": "Lab1\\SpaceVessel.cs",
+              "ToolTip": "C:\\Univer\\OOP\\Lab1\\Lab1\\SpaceVessel.cs",
+              "RelativeToolTip": "Lab1\\SpaceVessel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T06:17:21.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CombatInputControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Univer\\OOP\\Lab1\\Lab1\\CombatInputControl.cs",
+              "RelativeDocumentMoniker": "Lab1\\CombatInputControl.cs",
+              "ToolTip": "C:\\Univer\\OOP\\Lab1\\Lab1\\CombatInputControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Lab1\\CombatInputControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T06:15:33.874Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Univer\\OOP\\Lab1\\Lab1\\Form1.cs",
+              "RelativeDocumentMoniker": "Lab1\\Form1.cs",
+              "ToolTip": "C:\\Univer\\OOP\\Lab1\\Lab1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Lab1\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T06:14:10.911Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransportInputControl.cs",
+              "DocumentMoniker": "C:\\Univer\\OOP\\Lab1\\Lab1\\TransportInputControl.cs",
+              "RelativeDocumentMoniker": "Lab1\\TransportInputControl.cs",
+              "ToolTip": "C:\\Univer\\OOP\\Lab1\\Lab1\\TransportInputControl.cs",
+              "RelativeToolTip": "Lab1\\TransportInputControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T06:17:07.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CombatInputControl.cs",
+              "DocumentMoniker": "C:\\Univer\\OOP\\Lab1\\Lab1\\CombatInputControl.cs",
+              "RelativeDocumentMoniker": "Lab1\\CombatInputControl.cs",
+              "ToolTip": "C:\\Univer\\OOP\\Lab1\\Lab1\\CombatInputControl.cs",
+              "RelativeToolTip": "Lab1\\CombatInputControl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T06:16:35.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CombatInputControl.resx",
+              "DocumentMoniker": "C:\\Univer\\OOP\\Lab1\\Lab1\\CombatInputControl.resx",
+              "RelativeDocumentMoniker": "Lab1\\CombatInputControl.resx",
+              "ToolTip": "C:\\Univer\\OOP\\Lab1\\Lab1\\CombatInputControl.resx",
+              "RelativeToolTip": "Lab1\\CombatInputControl.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-02-24T06:15:39.845Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
