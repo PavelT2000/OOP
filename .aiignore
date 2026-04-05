@@ -1,0 +1,27 @@
+# Build and output directories
+**/bin/
+**/obj/
+
+# Visual Studio / IDE settings
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet packages
+**/packages/
+**/project.assets.json
+**/project.nuget.cache
+
+# Metadata and cache files
+**/*.log
+**/*.tmp
+**/*.cache
+**/*.pdb
+**/*.dll
+**/*.exe
+**/*.metadata
+**/*.vsidx
+**/*.dtbcache
+**/*.futdcache
