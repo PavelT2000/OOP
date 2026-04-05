@@ -1,0 +1,311 @@
+=== PROJECT HIERARCHY ===
+├── .aiignore
+└── Lab1
+    └── Lab1
+        ├── CargoFreighter.cs
+        ├── CombatInputControl.Designer.cs
+        ├── CombatInputControl.cs
+        ├── CombatInputControl.resx
+        ├── CombatShip.cs
+        ├── Destroyer.cs
+        ├── Form1.Designer.cs
+        ├── Form1.cs
+        ├── Form1.resx
+        ├── Lab1.csproj
+        ├── Program.cs
+        ├── SpaceVessel.cs
+        ├── TransportInputControl.Designer.cs
+        ├── TransportInputControl.cs
+        ├── TransportInputControl.resx
+        └── TransportShip.cs
+
+=== SOURCE CODE ===
+
+--- FILE: Lab1\Lab1\SpaceVessel.cs ---
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab1
+{
+    public abstract class SpaceVessel
+    {
+        private string _uid;
+        private double _fuel;
+        
+        public string ModelName { get; protected set; }
+
+        public double Fuel
+        {
+            get => _fuel;
+            set
+            {
+                if (value < 0) throw new ArgumentException("Fuel cannot be negative!");
+                _fuel = value;
+            }
+        }
+
+        protected SpaceVessel(string model, double initialFuel)
+        {
+            _uid = Guid.NewGuid().ToString().Substring(0, 5);
+            ModelName = model;
+            Fuel = initialFuel;
+        }
+        ~SpaceVessel()
+        {
+            Console.WriteLine($"Object: {ModelName} is deleted from memory");
+        }
+        public virtual string GetStatus()
+        {
+            return $"[{_uid}] Ship {ModelName}: Fuel {Fuel}%";
+        }
+        public abstract void ExecuteMission();
+
+    }
+}
+
+
+--- FILE: Lab1\Lab1\CombatShip.cs ---
+﻿using Lab1;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab1;
+public class CombatShip : SpaceVessel
+{
+    public int FirePower { get; set; }
+    public CombatShip(string model, int power) : base(model, 100)
+    {
+        FirePower = power;
+    }
+    public override void ExecuteMission()
+    {
+        Fuel -= 20;
+    }
+    public override string GetStatus()
+    {
+        return base.GetStatus() + $" | Мощь: {FirePower}";
+    }
+}
+
+
+
+
+
+--- FILE: Lab1\Lab1\TransportShip.cs ---
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab1
+{
+    public class TransportShip : SpaceVessel
+    {
+        public int Capacity { get; set; }
+        public TransportShip(string model, int cap) : base(model,100)
+        {
+            Capacity = cap;
+        }
+        public override void ExecuteMission()
+        {
+            Fuel -= 10;
+        }
+    }
+}
+
+
+--- FILE: Lab1\Lab1\Destroyer.cs ---
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab1
+{
+    public sealed class Destroyer : CombatShip
+    {
+        public Destroyer(string name) : base(name, 500)
+        {
+
+        }
+        public void LaunchNuke()
+        {
+            FirePower += 100;
+        }
+    }
+}
+
+
+--- FILE: Lab1\Lab1\CargoFreighter.cs ---
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab1
+{
+    public sealed class CargoFreighter :TransportShip
+    {
+        private string[] _cargoLog = new string[10];
+        public CargoFreighter(string  name) :base(name,2000)
+        {
+
+        }
+        public string this[int index]
+        {
+            get => _cargoLog[index];
+            set => _cargoLog[index] = value;
+        }
+
+    }
+}
+
+
+--- FILE: Lab1\Lab1\Form1.cs ---
+namespace Lab1
+{
+    public partial class Form1 : Form
+    {
+        private List<SpaceVessel> _fleet = new List<SpaceVessel>();
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void AddShip_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _fleet.Add(new Destroyer("Starkiller"));
+                _fleet.Add(new CargoFreighter("Jupiter-Transporter"));
+
+
+                UpdateUI();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Critical exception:{ex.Message}");
+            }
+        }
+        private void UpdateUI()
+        {
+            MyListBox.Items.Clear();
+            foreach (var ship in _fleet)
+            {
+                MyListBox.Items.Add(ship.GetStatus());
+            }
+        }
+
+        private void cmbShipType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            panelInputContainer.Controls.Clear(); //   ""
+
+            UserControl selectedControl = cmbShipType.SelectedIndex switch
+            {
+                0 => new CombatInputControl(),    //   ""
+                1 => new TransportInputControl(), //   ""
+                _ => throw new Exception("  ")
+            };
+
+            selectedControl.Dock = DockStyle.Fill;
+            panelInputContainer.Controls.Add(selectedControl);
+        }
+    }
+    
+    
+}
+
+
+--- FILE: Lab1\Lab1\CombatInputControl.cs ---
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Lab1
+{
+    public partial class CombatInputControl : UserControl
+    {
+        public string ShipName => txtName.Text;
+
+        public int FirePower
+        {
+            get
+            {
+                if (!int.TryParse(txtFirePower.Text, out int result))
+                    throw new FormatException("Fire power must be int");
+                return result;
+            }
+        }
+        public CombatInputControl()
+        {
+            InitializeComponent();
+        }
+    }
+}
+
+
+--- FILE: Lab1\Lab1\TransportInputControl.cs ---
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Lab1
+{
+    public partial class TransportInputControl : UserControl
+    {
+        public string ShipName => txtName.Text;
+
+        public int Capacity
+        {
+            get
+            {
+                if (!int.TryParse(txtCap.Text, out int result))
+                    throw new ArgumentException("Wrong capacity");
+                return result;
+            }
+        }
+
+        public TransportInputControl() { InitializeComponent(); }
+    }
+}
+
+
+--- FILE: Lab1\Lab1\Program.cs ---
+namespace Lab1
+{
+    internal static class Program
+    {
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new Form1());
+        }
+    }
+}
